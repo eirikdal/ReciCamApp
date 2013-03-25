@@ -4,7 +4,7 @@
 // </copyright>
 // -
 
-namespace Microsoft.Hawaii.Ocr.SampleAppWinRT.ViewModels
+namespace ReciCam.Windows.App.ViewModels
 {
     /// <summary>
     /// Specifies the view mode for the screen that shows the result of the OCR conversion.

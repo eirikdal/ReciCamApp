@@ -4,18 +4,15 @@
 // </copyright>
 // -
 
-namespace Microsoft.Hawaii.Ocr.SampleAppWinRT.Controls
-{
-    using System;
-    using Microsoft.Hawaii.Ocr.SampleAppWinRT.Data;
-    using Windows.Media.Capture;
-    using Windows.Media.MediaProperties;
-    using Windows.Storage;
-    using Windows.Storage.Pickers;
-    using Windows.UI.Popups;
-    using Windows.UI.Xaml;
-    using Windows.UI.Xaml.Controls;
+using System;
+using ReciCam.Windows.App.Data;
+using Windows.Storage;
+using Windows.Storage.Pickers;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 
+namespace ReciCam.Windows.App.Controls
+{
     /// <summary>
     /// PhotoSelector class contains the code behind for the PhotoSelector user control.
     /// The PhotoSelector user control allows the user to select the method of retriving 
@@ -84,7 +81,7 @@ namespace Microsoft.Hawaii.Ocr.SampleAppWinRT.Controls
                     if (file != null)
                     {
                         // open captured file and set the image source on the control
-                        this.ocrData.PhotoStream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
+                        this.ocrData.PhotoStream = await file.OpenAsync(FileAccessMode.Read);
                     }
                 }
                 finally

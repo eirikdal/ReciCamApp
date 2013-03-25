@@ -4,7 +4,7 @@
 // </copyright>
 // -
 
-namespace Microsoft.Hawaii.Ocr.SampleAppWinRT.Utils
+namespace ReciCam.Windows.App.Utils
 {
     using System.ComponentModel;
 

@@ -4,7 +4,7 @@
 // </copyright>
 // -
 
-namespace Microsoft.Hawaii.Ocr.SampleAppWinRT
+namespace ReciCam.Windows.App
 {
     /// <summary>
     /// HawaiiClient stores the Hawaii client identity.

@@ -4,11 +4,12 @@
 // </copyright>
 // -
 
-namespace Microsoft.Hawaii.Ocr.SampleAppWinRT.Controls
+using ReciCam.Windows.App.Data;
+using ReciCam.Windows.App.ViewModels;
+using Windows.UI.Xaml.Controls;
+
+namespace ReciCam.Windows.App.Controls
 {
-    using Microsoft.Hawaii.Ocr.SampleAppWinRT.Data;
-    using Microsoft.Hawaii.Ocr.SampleAppWinRT.ViewModels;
-    using Windows.UI.Xaml.Controls;
 
     /// <summary>
     /// PhotoArea class contains the code behind for the PhotoArea user control.

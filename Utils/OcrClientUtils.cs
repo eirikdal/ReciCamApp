@@ -4,13 +4,13 @@
 // </copyright>
 // -
 
-namespace Microsoft.Hawaii.Ocr.SampleAppWinRT.Utils
-{
-    using System;
-    using System.Diagnostics;
-    using System.Threading.Tasks;
-    using Windows.Storage.Streams;
+using System;
+using System.Diagnostics;
+using System.Threading.Tasks;
+using Windows.Storage.Streams;
 
+namespace ReciCam.Windows.App.Utils
+{
     /// <summary>
     /// Utils is a general utility class that contains helper methods used throughout this application.
     /// </summary>

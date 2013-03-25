@@ -4,11 +4,14 @@
 // </copyright>
 // -
 
-namespace Microsoft.Hawaii.Ocr.SampleAppWinRT.ViewModels
+using ReciCam.Windows.App.Data;
+using ReciCam.Windows.App.Utils;
+
+namespace ReciCam.Windows.App.ViewModels
 {
     using System;
-    using Microsoft.Hawaii.Ocr.SampleAppWinRT.Data;
-    using Microsoft.Hawaii.Ocr.SampleAppWinRT.Utils;
+    using Windows.App.Data;
+    using Windows.App.Utils;
 
     /// <summary>
     /// Base class for at least some of the view model classes used in the OcrTestClient project.

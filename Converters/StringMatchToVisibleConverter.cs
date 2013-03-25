@@ -4,13 +4,12 @@
 // </copyright>
 // -
 
-namespace Microsoft.Hawaii.Ocr.SampleAppWinRT.Converters
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Data;
+
+namespace ReciCam.Windows.App.Converters
 {
     using System;
-    using System.Globalization;
-    using System.Windows;
-    using Windows.UI.Xaml;
-    using Windows.UI.Xaml.Data;
 
     /// <summary>
     /// Converter that transforms a string match to a Visibility.

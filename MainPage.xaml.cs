@@ -4,19 +4,21 @@
 // </copyright>
 // ----------------------------------------------------------------------
 
+using System;
+using System.Diagnostics;
+using Microsoft.Hawaii;
 using Microsoft.Hawaii.Ocr.Client;
-using Microsoft.Hawaii.Ocr.SampleAppWinRT.Controls;
-using Microsoft.Hawaii.Ocr.SampleAppWinRT.Data;
-using Microsoft.Hawaii.Ocr.SampleAppWinRT.Utils;
-using Microsoft.Hawaii.Ocr.SampleAppWinRT.ViewModels;
+using ReciCam.Windows.App.Controls;
+using ReciCam.Windows.App.Data;
+using ReciCam.Windows.App.Utils;
+using ReciCam.Windows.App.ViewModels;
+using Windows.UI.Core;
+using Windows.UI.Popups;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 
-namespace Microsoft.Hawaii.Ocr.SampleAppWinRT
+namespace ReciCam.Windows.App
 {
-    using System;
-    using System.Diagnostics;
-    using Windows.UI.Popups;
-    using Windows.UI.Xaml.Controls;
-
     /// <summary>
     /// MainPage class contains the code behind for the MainPage user control.
     /// The MainPage user control is the main user control used by this application.
@@ -76,7 +78,7 @@ namespace Microsoft.Hawaii.Ocr.SampleAppWinRT
         private async void ExitApp(string message, string caption)
         {
             await Dispatcher.RunAsync(
-               Windows.UI.Core.CoreDispatcherPriority.Normal,
+               CoreDispatcherPriority.Normal,
                async () =>
                {
                    MessageDialog msg = new MessageDialog(message, caption);
@@ -97,7 +99,7 @@ namespace Microsoft.Hawaii.Ocr.SampleAppWinRT
                 if (this.ocrConversionStateManager.OcrConversionState != OcrConversionState.Converting)
                 {
                     await Dispatcher.RunAsync(
-                        Windows.UI.Core.CoreDispatcherPriority.Normal, 
+                        CoreDispatcherPriority.Normal, 
                         () =>
                         {
                             this.mainFlipView.SelectedIndex = 2;
@@ -131,7 +133,7 @@ namespace Microsoft.Hawaii.Ocr.SampleAppWinRT
             var photoItem = (FlipViewItem)this.mainFlipView.Items[1];
             var textoItem = (FlipViewItem)this.mainFlipView.Items[2];
             textoItem.IsEnabled = photoItem.IsEnabled = true;
-            textoItem.Visibility = photoItem.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            textoItem.Visibility = photoItem.Visibility = Visibility.Visible;
         }
 
         /// <summary>
@@ -149,12 +151,12 @@ namespace Microsoft.Hawaii.Ocr.SampleAppWinRT
                     // called on the completion of the OCR process.
                     // Using Dispatcher.BeginInvoke ensures that 
                     // OnOcrCompleted is invoked on the Main UI thread.
-                    await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () => OnOcrCompleted(output));
+                    await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => OnOcrCompleted(output));
                 });
 
             this.ocrConversionStateManager.OcrConversionState = OcrConversionState.Converting;
             await Dispatcher.RunAsync(
-                Windows.UI.Core.CoreDispatcherPriority.Normal, 
+                CoreDispatcherPriority.Normal, 
                 () =>
                 { 
                     this.mainFlipView.SelectedIndex = 1; 
@@ -215,7 +217,7 @@ namespace Microsoft.Hawaii.Ocr.SampleAppWinRT
         private async void DisplayMessage(string message, string caption)
         {
             await Dispatcher.RunAsync(
-                Windows.UI.Core.CoreDispatcherPriority.Normal,
+                CoreDispatcherPriority.Normal,
                 async () =>
                 {
                     MessageDialog msg = new MessageDialog(message, caption);

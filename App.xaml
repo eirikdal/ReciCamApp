@@ -1,8 +1,8 @@
 ﻿<Application
-    x:Class="Microsoft.Hawaii.Ocr.SampleAppWinRT.App"
+    x:Class="ReciCam.Windows.App.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Microsoft.Hawaii.Ocr.SampleAppWinRT">
+    xmlns:local="using:ReciCam.Windows.App">
 
     <Application.Resources>
         <ResourceDictionary>

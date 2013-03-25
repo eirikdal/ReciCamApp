@@ -4,7 +4,7 @@
 // </copyright>
 // -
 
-namespace Microsoft.Hawaii.Ocr.SampleAppWinRT.Data
+namespace ReciCam.Windows.App.Data
 {
     /// <summary>
     /// Specifies the state of the OCR conversion.

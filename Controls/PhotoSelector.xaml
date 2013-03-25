@@ -1,5 +1,5 @@
 ﻿<UserControl 
-    x:Class="Microsoft.Hawaii.Ocr.SampleAppWinRT.Controls.PhotoSelector"
+    x:Class="ReciCam.Windows.App.Controls.PhotoSelector"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:localConverters="clr-namespace:Microsoft.Hawaii.Ocr.SampleAppWinRT.Converters"

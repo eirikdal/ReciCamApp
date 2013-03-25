@@ -4,13 +4,14 @@
 // </copyright>
 // -
 
-namespace Microsoft.Hawaii.Ocr.SampleAppWinRT.Converters
+using Windows.UI.Xaml.Data;
+using Windows.UI.Xaml.Media;
+
+namespace ReciCam.Windows.App.Converters
 {
     using System;
     using System.Globalization;
     using System.Windows;
-    using Windows.UI.Xaml.Data;
-    using Windows.UI.Xaml.Media;
 
     /// <summary>
     /// Converter that transforms an angle into a RotateTransform.

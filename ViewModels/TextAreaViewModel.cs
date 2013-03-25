@@ -4,10 +4,12 @@
 // </copyright>
 // -
 
-namespace Microsoft.Hawaii.Ocr.SampleAppWinRT.ViewModels
+using ReciCam.Windows.App.Data;
+
+namespace ReciCam.Windows.App.ViewModels
 {
-    using Microsoft.Hawaii.Ocr.SampleAppWinRT.Data;
-    using Microsoft.Hawaii.Ocr.SampleAppWinRT.Utils;
+    using Windows.App.Data;
+    using Windows.App.Utils;
 
     /// <summary>
     /// View Model that is used by the TextArea user control.

@@ -4,9 +4,11 @@
 // </copyright>
 // -
 
-namespace Microsoft.Hawaii.Ocr.SampleAppWinRT.Data
+using ReciCam.Windows.App.Utils;
+
+namespace ReciCam.Windows.App.Data
 {
-    using Microsoft.Hawaii.Ocr.SampleAppWinRT.Utils;
+    using Windows.App.Utils;
 
     /// <summary>
     /// OcrConversionStateManager implements a singleton that provides access 

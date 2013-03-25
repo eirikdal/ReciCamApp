@@ -4,17 +4,16 @@
 // </copyright>
 // -
 
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
 using Microsoft.Hawaii.Ocr.Client;
-using Microsoft.Hawaii.Ocr.SampleAppWinRT.Utils;
+using ReciCam.Windows.App.Utils;
+using Windows.Storage.Streams;
 
-namespace Microsoft.Hawaii.Ocr.SampleAppWinRT.Data
+namespace ReciCam.Windows.App.Data
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Diagnostics;
-    using Windows.Storage.Streams;
-
     /// <summary>
     /// OcrData implements a singleton that provides access to the photo and 
     /// corresponding text obtained from OCR conversion. It inherits from ModelBase which means that 

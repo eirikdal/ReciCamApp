@@ -4,14 +4,14 @@
 // </copyright>
 // -
 
-namespace Microsoft.Hawaii.Ocr.SampleAppWinRT.ViewModels
-{
-    using System.ComponentModel;
-    using Microsoft.Hawaii.Ocr.SampleAppWinRT.Data;
-    using Windows.Storage.Streams;
-    using Windows.UI.Xaml.Media;
-    using Windows.UI.Xaml.Media.Imaging;
+using System.ComponentModel;
+using ReciCam.Windows.App.Data;
+using Windows.Storage.Streams;
+using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 
+namespace ReciCam.Windows.App.ViewModels
+{
     /// <summary>
     /// View Model that is used by the PhotoArea user control.
     /// </summary>

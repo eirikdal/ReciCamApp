@@ -4,14 +4,14 @@
 // </copyright>
 // ----------------------------------------------------------------------
 
-namespace Microsoft.Hawaii.Ocr.SampleAppWinRT
-{
-    using System;
-    using Windows.ApplicationModel;
-    using Windows.ApplicationModel.Activation;
-    using Windows.UI.Xaml;
-    using Windows.UI.Xaml.Controls;
+using System;
+using Windows.ApplicationModel;
+using Windows.ApplicationModel.Activation;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 
+namespace ReciCam.Windows.App
+{
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
     /// </summary>

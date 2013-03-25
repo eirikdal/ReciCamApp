@@ -4,11 +4,12 @@
 // </copyright>
 // -
 
-namespace Microsoft.Hawaii.Ocr.SampleAppWinRT.Converters
+using Windows.UI.Xaml.Data;
+
+namespace ReciCam.Windows.App.Converters
 {
     using System;
     using System.Globalization;
-    using Windows.UI.Xaml.Data;
 
     /// <summary>
     /// Converter that transforms Bytes in Kilo Bytes.
