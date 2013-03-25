@@ -17,20 +17,15 @@
         </Grid.RowDefinitions>
         <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0">
             <TextBlock 
-                HorizontalAlignment="Left" 
-                Margin="10,0" 
-                TextWrapping="Wrap" 
-                Text="Project Hawaii SDK" 
-                VerticalAlignment="Top"
-                Style="{StaticResource SubtitleTextStyle}" 
-                FontSize="24"/>
-            <TextBlock 
                 Margin="10,10,0,0" 
                 TextWrapping="Wrap" 
-                Text="OCR Sample App" 
                 VerticalAlignment="Top" 
                 FontSize="72" 
-                HorizontalAlignment="Left"/>
+                HorizontalAlignment="Left" Height="80">
+            	<Run Text="ReciCam"/>
+            	<LineBreak/>
+            	<Run/>
+            </TextBlock>
             <Grid 
             x:Name="HawaiiAppIdErrorArea"
             Grid.Row="1" 
@@ -51,7 +46,7 @@
                             <TextBlock 
                                 Margin="10,10,0,0" 
                                 TextWrapping="Wrap" 
-                                Text="Select Photo" 
+                                Text="New photo" 
                                 VerticalAlignment="Top" 
                                 FontSize="36" 
                                 HorizontalAlignment="Left"/>

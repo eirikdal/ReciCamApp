@@ -8,7 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using Microsoft.Hawaii.Ocr.Client;
+using Microsoft.Hawaii.Ocr.MobileClient;
 using ReciCam.Windows.App.Utils;
 using Windows.Storage.Streams;
 

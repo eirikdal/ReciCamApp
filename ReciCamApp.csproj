@@ -7,8 +7,8 @@
     <ProjectGuid>{245BF450-F29B-42E9-B8CB-E9A50EBD6FEF}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Microsoft.Hawaii.Ocr.SampleAppWinRT</RootNamespace>
-    <AssemblyName>Microsoft.Hawaii.Ocr.SampleAppWinRT</AssemblyName>
+    <RootNamespace>ReciCam.Windows.App</RootNamespace>
+    <AssemblyName>ReciCam.Windows.App</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -44,12 +44,14 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\CropBitmap.cs" />
     <Compile Include="Controls\PhotoArea.xaml.cs">
       <DependentUpon>PhotoArea.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\PhotoSelector.xaml.cs">
       <DependentUpon>PhotoSelector.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\SelectedRegion.cs" />
     <Compile Include="Controls\TextArea.xaml.cs">
       <DependentUpon>TextArea.xaml</DependentUpon>
     </Compile>

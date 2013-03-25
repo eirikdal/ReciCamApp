@@ -7,7 +7,7 @@
 using System;
 using System.Diagnostics;
 using Microsoft.Hawaii;
-using Microsoft.Hawaii.Ocr.Client;
+using Microsoft.Hawaii.Ocr.MobileClient;
 using ReciCam.Windows.App.Controls;
 using ReciCam.Windows.App.Data;
 using ReciCam.Windows.App.Utils;
